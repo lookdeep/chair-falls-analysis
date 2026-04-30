@@ -1,0 +1,25 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.cache/
+
+# Generated run artifacts
+/data/raw/*
+/data/staged/*
+/data/fixtures/real_benchmark/*
+/outputs/audit/*
+/outputs/manifests/*
+/outputs/qa/*
+/paper/reconcile/*
+/paper/seed_media/*
+
+# Keep directory placeholders
+!/data/raw/.gitkeep
+!/data/staged/.gitkeep
+!/outputs/audit/.gitkeep
+!/outputs/manifests/.gitkeep
+!/outputs/qa/.gitkeep
+!/paper/reconcile/.gitkeep

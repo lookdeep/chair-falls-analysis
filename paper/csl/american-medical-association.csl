@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="en-US" demote-non-dropping-particle="sort-only" page-range-format="expanded">
+  <info>
+    <title>American Medical Association (Local)</title>
+    <id>https://lookdeep.health/csl/american-medical-association-local</id>
+    <link href="https://lookdeep.health/csl/american-medical-association-local" rel="self"/>
+    <category citation-format="numeric"/>
+    <updated>2026-03-24T00:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/"/>
+  </info>
+  <locale xml:lang="en">
+    <terms>
+      <term name="et-al">et al.</term>
+      <term name="page-range-delimiter">-</term>
+    </terms>
+  </locale>
+  <macro name="author">
+    <names variable="author" et-al-min="7" et-al-use-first="3">
+      <name delimiter=", " initialize-with="" name-as-sort-order="all" sort-separator=" "/>
+      <substitute>
+        <names variable="editor" et-al-min="7" et-al-use-first="3">
+          <name delimiter=", " initialize-with="" name-as-sort-order="all" sort-separator=" "/>
+        </names>
+        <text macro="publisher-like"/>
+        <text variable="title"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+  <macro name="container-title">
+    <text variable="container-title" font-style="italic"/>
+  </macro>
+  <macro name="publisher-like">
+    <choose>
+      <if variable="publisher">
+        <text variable="publisher"/>
+      </if>
+      <else-if variable="organization">
+        <text variable="organization"/>
+      </else-if>
+      <else-if variable="institution">
+        <text variable="institution"/>
+      </else-if>
+      <else-if variable="container-title">
+        <text variable="container-title" font-style="italic"/>
+      </else-if>
+    </choose>
+  </macro>
+  <macro name="year">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+  <macro name="volume-issue-pages">
+    <group delimiter="">
+      <text variable="volume"/>
+      <group prefix="(" suffix=")">
+        <text variable="issue"/>
+      </group>
+      <group prefix=":" delimiter="-">
+        <text variable="page"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="note">
+    <text variable="note"/>
+  </macro>
+  <macro name="doi-or-url">
+    <choose>
+      <if variable="DOI">
+        <text variable="DOI" prefix=" doi:"/>
+      </if>
+      <else-if variable="URL">
+        <text variable="URL"/>
+      </else-if>
+    </choose>
+  </macro>
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout vertical-align="sup" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography second-field-align="flush">
+    <layout suffix=".">
+      <text variable="citation-number" suffix=". "/>
+      <choose>
+        <if type="article-journal article-magazine article-newspaper" match="any">
+          <group delimiter=". ">
+            <text macro="author"/>
+            <text macro="title"/>
+            <text macro="container-title"/>
+            <group delimiter="">
+              <text macro="year"/>
+              <text value=";"/>
+              <text macro="volume-issue-pages"/>
+            </group>
+          </group>
+          <text macro="doi-or-url" prefix=" "/>
+        </if>
+        <else-if type="paper-conference" match="any">
+          <group delimiter=". ">
+            <text macro="author"/>
+            <text macro="title"/>
+            <group delimiter=" ">
+              <text value="In:"/>
+              <text variable="container-title" font-style="italic"/>
+              <text value=";"/>
+              <text macro="year"/>
+            </group>
+          </group>
+          <text macro="doi-or-url" prefix=" "/>
+        </else-if>
+        <else-if type="book report webpage post-weblog" match="any">
+          <group delimiter=". ">
+            <text macro="author"/>
+            <text macro="title"/>
+            <group delimiter="; ">
+              <text macro="publisher-like"/>
+              <text macro="year"/>
+            </group>
+            <text macro="note"/>
+          </group>
+          <text macro="doi-or-url" prefix=" "/>
+        </else-if>
+        <else>
+          <group delimiter=". ">
+            <text macro="author"/>
+            <text macro="title"/>
+            <group delimiter="; ">
+              <text macro="publisher-like"/>
+              <text macro="year"/>
+            </group>
+            <text macro="note"/>
+          </group>
+          <text macro="doi-or-url" prefix=" "/>
+        </else>
+      </choose>
+    </layout>
+  </bibliography>
+</style>

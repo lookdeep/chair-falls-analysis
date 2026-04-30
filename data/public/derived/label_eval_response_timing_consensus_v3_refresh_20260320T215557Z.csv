@@ -1,0 +1,8 @@
+metric,value
+scored_sequences,30.0
+detection_precision,1.0
+detection_recall,0.733333
+detection_f1,0.846154
+latency_mae_seconds,37.863636
+latency_abs_error_p50_seconds,22.0
+latency_abs_error_p90_seconds,82.5

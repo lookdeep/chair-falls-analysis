@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative chair-panel risk concentration schematic</title>
+  <desc id="desc">Aggregate static figure derived from the internal simulator defaults: 12-patient panel, 3 chair seats, 6 percent chair-time share, descriptive chair-to-bed multiplier 4.14, and adjusted comparator 2.35.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect x="34" y="28" width="1132" height="704" rx="18" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+
+  <text x="68" y="82" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#111827">
+    Illustrative panel-level risk concentration under default simulator assumptions
+  </text>
+  <text x="68" y="116" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4b5563">
+    Aggregate schematic only. No patient-derived imagery. Derived from the internal manuscript simulator defaults for the CIN packet.
+  </text>
+
+  <rect x="68" y="148" width="300" height="164" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="92" y="186" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Assumptions</text>
+  <text x="92" y="222" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">12-patient monitored panel</text>
+  <text x="92" y="252" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">3 available chair seats</text>
+  <text x="92" y="282" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">6.0% average chair-time share</text>
+  <text x="92" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">Descriptive chair-to-bed multiplier: 4.14x</text>
+
+  <rect x="394" y="148" width="330" height="164" rx="14" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="418" y="186" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#9a3412">Derived outputs</text>
+  <text x="418" y="222" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">Effective chair share: 6.0%</text>
+  <text x="418" y="252" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">Chair share of expected risk: 20.9%</text>
+  <text x="418" y="282" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">Blended risk index vs all-bed baseline: 1.19x</text>
+  <text x="418" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">Adjusted-RR (2.35) comparator share: 13.0%</text>
+
+  <rect x="750" y="148" width="348" height="164" rx="14" fill="#f9fafb" stroke="#d1d5db"/>
+  <text x="774" y="186" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Interpretation</text>
+  <text x="774" y="222" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">Only 6.0% of monitored time is chair-positioned,</text>
+  <text x="774" y="250" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">but the descriptive 4.14x multiplier concentrates</text>
+  <text x="774" y="278" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">20.9% of expected risk in that small time share.</text>
+  <text x="774" y="306" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1f2937">The adjusted RR 2.35 suggests the true share may be lower.</text>
+
+  <text x="68" y="376" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Time allocation</text>
+  <rect x="68" y="396" width="1030" height="28" rx="14" fill="#dbeafe"/>
+  <rect x="68" y="396" width="61.8" height="28" rx="14" fill="#d97706"/>
+  <text x="68" y="450" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4b5563">Chair 6.0%</text>
+  <text x="1006" y="450" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end" fill="#4b5563">Bed 94.0%</text>
+
+  <text x="68" y="510" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Expected risk concentration (descriptive multiplier 4.14x)</text>
+  <rect x="68" y="530" width="1030" height="28" rx="14" fill="#dbeafe"/>
+  <rect x="68" y="530" width="215.3" height="28" rx="14" fill="#d97706"/>
+  <text x="68" y="584" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4b5563">Chair 20.9%</text>
+  <text x="1006" y="584" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end" fill="#4b5563">Bed 79.1%</text>
+
+  <text x="68" y="638" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Illustrative 12-patient panel (available chair seats highlighted)</text>
+
+  <g transform="translate(68, 660)">
+    <g font-family="Arial, Helvetica, sans-serif" font-size="14" text-anchor="middle">
+      <g transform="translate(0,0)">
+        <rect width="74" height="42" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+        <text x="37" y="18" fill="#1f2937">Patient 1</text>
+        <text x="37" y="34" fill="#b45309">Chair</text>
+      </g>
+      <g transform="translate(84,0)">
+        <rect width="74" height="42" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+        <text x="37" y="18" fill="#1f2937">Patient 2</text>
+        <text x="37" y="34" fill="#b45309">Chair</text>
+      </g>
+      <g transform="translate(168,0)">
+        <rect width="74" height="42" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+        <text x="37" y="18" fill="#1f2937">Patient 3</text>
+        <text x="37" y="34" fill="#b45309">Chair</text>
+      </g>
+      <g transform="translate(252,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 4</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(336,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 5</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(420,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 6</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(504,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 7</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(588,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 8</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(672,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 9</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(756,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 10</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(840,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 11</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+      <g transform="translate(924,0)">
+        <rect width="74" height="42" rx="8" fill="#f9fafb" stroke="#d1d5db"/>
+        <text x="37" y="18" fill="#1f2937">Patient 12</text>
+        <text x="37" y="34" fill="#4b5563">Bed</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="68" y="724" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6b7280">
+    Caption: Illustrative aggregate schematic derived from internal simulator defaults. A 4.14 descriptive chair-to-bed multiplier concentrates
+  </text>
+  <text x="68" y="746" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6b7280">
+    20.9% of expected risk into 6.0% of monitored time; using the adjusted RR of 2.35 would yield a 13.0% chair-risk share. No patient-derived imagery is shown.
+  </text>
+</svg>

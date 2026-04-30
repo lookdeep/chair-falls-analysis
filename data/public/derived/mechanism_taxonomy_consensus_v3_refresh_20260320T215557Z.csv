@@ -1,0 +1,33 @@
+event_key,prefall_location,charter_mechanism,fall_tags,last_furniture,time_since_departure,annotation_count
+10275|2025-10-15|18:47,room,other,"back, trip",bed,69,1
+10588|2025-10-22|15:08,bed,transfer_failure,"slip, support_bed",,,1
+10704|2025-10-27|11:53,room,other,"back, trip",chair,8,1
+10965|2025-11-06|12:13,bed,transfer_failure,"support_bed, tumble",,,1
+11026|2025-11-07|12:26,room,other,"back, trip",bed,4,1
+11243|2025-11-15|16:34,chair,footrest_positioning,footrest,,,1
+12108|2025-12-12|19:18,bed,other,"back, tumble",,,1
+12312|2025-12-20|12:36,bed,transfer_failure,"slow, support_bed",,,1
+14014|2026-01-04|14:50,room,other,"back, slip",bed,10,1
+15113|2026-01-13|04:54,room,transfer_failure,"support_bed, trip",bed,4,1
+16369|2026-01-24|08:08,room,other,"slip, support_staff, support_walker",chair,150,1
+5028|2024-09-07|05:30,room,transfer_failure,"back, slip, support_bed",bed,136,1
+5036|2024-09-08|08:13,chair,footrest_positioning,footrest,,,1
+5051|2024-09-12|08:01,bed,other,"back, tumble",,,1
+5384|2024-10-21|05:10,bed,other,"slip, support_person",,,1
+5415|2024-10-23|20:37,room,other,collapse,bed,18,1
+5758|2024-12-21|20:00,room,other,"collapse, support_person",bed,19,1
+5807|2024-12-14|18:08,bed,transfer_failure,"back, slip, support_bed",,,1
+5812|2024-12-11|17:16,chair,footrest_positioning,"camera_skew, footrest, reach, support_lift",,,1
+5992|2025-01-03|13:42,room,other,"support_wall, tumble",bed,6,1
+6056|2025-01-11|13:58,chair,footrest_positioning,footrest,,,1
+6289|2025-01-25|02:39,room,other,trip,bed,76,1
+6635|2025-02-25|10:17,room,other,"slip, support_wall",bed,18,1
+6759|2025-03-04|19:32,bed,other,"slow, tumble",,,1
+6901|2025-03-19|14:12,bed,other,"back, tumble",,,1
+7434|2025-05-14|11:26,bed,transfer_failure,"slip, support_bed",,,1
+7611|2025-05-17|19:11,room,other,"back, slip, support_door",chair,50,1
+7814|2025-07-29|10:42,bed,transfer_failure,"slip, support_bed",,,1
+7897|2025-06-14|03:39,bed,other,"roll, slow",,,1
+8523|2025-07-23|18:07,chair,footrest_positioning,footrest,,,1
+9230|2025-08-25|13:32,chair,footrest_positioning,footrest,,,1
+9242|2025-08-31|10:03,chair,other,"slip, slow",,,1

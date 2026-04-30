@@ -1,0 +1,3 @@
+sensitivity_label,position,rr,ci_lower,ci_upper,p_value,n_events,exposure_hours,model_family,se_type,cluster_variable,deviance_df_ratio,pearson_df_ratio,model_notes
+primary_adjusted_hc3,chair,2.350735126205394,0.9297632676751059,5.94340067595235,0.07090054497452408,40.0,320.510545,poisson,hc3,,0.13346461552064326,0.4923143092599857,
+primary_adjusted_clustered,chair,2.350735126205394,1.8918658214911621,2.9209025136995974,1.2167179778010991e-14,40.0,320.510545,poisson,cluster,division_id,0.13346461552064326,0.4923143092599857,

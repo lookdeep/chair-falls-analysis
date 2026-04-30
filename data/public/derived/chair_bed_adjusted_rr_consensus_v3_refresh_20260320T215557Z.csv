@@ -1,0 +1,16 @@
+sensitivity_label,position,rr,ci_lower,ci_upper,p_value,n_events,exposure_hours,model_family,se_type,cluster_variable,deviance_df_ratio,pearson_df_ratio,model_notes
+primary_adjusted,chair,2.350735126205394,0.873360182960128,6.327235591215599,0.09065404218584926,40.0,320.510545,poisson,default,,0.13346461552064326,0.4923143092599857,
+primary_adjusted_hc3,chair,2.350735126205394,0.9297632676751059,5.94340067595235,0.07090054497452408,40.0,320.510545,poisson,hc3,,0.13346461552064326,0.4923143092599857,
+primary_adjusted_clustered,chair,2.350735126205394,1.8918658214911621,2.9209025136995974,1.2167179778010991e-14,40.0,320.510545,poisson,cluster,division_id,0.13346461552064326,0.4923143092599857,
+timewindow_00_05,chair,,,,,6.0,46.420067,poisson,default,,,,insufficient_data
+timewindow_06_08,chair,,,,,3.0,2.3201019999999994,poisson,default,,,,insufficient_data
+timewindow_09_11,chair,,,,,3.0,3.490098999999999,poisson,default,,,,insufficient_data
+timewindow_12_14,chair,,,,,6.0,42.190082000000004,poisson,default,,,,insufficient_data
+timewindow_15_17,chair,,,,,5.0,73.55006899999998,poisson,default,,,,insufficient_data
+timewindow_18_20,chair,,,,,9.0,95.88005899999999,poisson,default,,,,insufficient_data
+timewindow_21_23,chair,,,,,8.0,56.660067,poisson,default,,,,insufficient_data
+weekday_only,chair,,,,,26.0,242.49038099999996,poisson,default,,,,insufficient_data
+weekend_only,chair,,,,,14.0,78.020164,poisson,default,,,,insufficient_data
+position_certain_only,chair,,,,,38.0,292.36055899999997,poisson,default,,,,insufficient_data
+exploratory_unadjusted,ambulatory,,,,,0.45795022646102324,104.07,unadjusted,na,,,,unadjusted_rate_per_1000h=4.4004
+furniture_origin_reclassified,chair,2.350735126205394,0.873360182960128,6.327235591215599,0.09065404218584926,40.0,320.510545,poisson,default,,0.13346461552064326,0.4923143092599857,

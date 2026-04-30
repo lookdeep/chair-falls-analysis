@@ -1,0 +1,26 @@
+title: "Exposure-Normalized Bed and Chair Fall Rates via Continuous AI Monitoring"
+author:
+  - name: "Paolo Gabriel"
+    orcid: "0000-0002-5464-769X"
+    correspondence: true
+  - name: "Peter Rehani"
+  - name: "Zack Drumm"
+  - name: "Tyler Troy"
+  - name: "Tiffany Wyatt"
+  - name: "Narinder Singh"
+date: ""
+lang: en-US
+bibliography: arxiv/references.bib
+csl: csl/ieee.csl
+documentclass: article
+classoption:
+  - 11pt
+fontsize: 11pt
+geometry:
+  - margin=1in
+linestretch: 1.15
+numbersections: false
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+papersize: letter

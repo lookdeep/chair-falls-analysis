@@ -1,0 +1,3 @@
+last_furniture,n_events,latency_seconds_median,latency_seconds_mean,latency_seconds_p25,latency_seconds_p75,latency_seconds_min,latency_seconds_max
+bed,10,18.0,36.0,7.0,56.5,4.0,136.0
+chair,3,50.0,69.3,29.0,100.0,8.0,150.0

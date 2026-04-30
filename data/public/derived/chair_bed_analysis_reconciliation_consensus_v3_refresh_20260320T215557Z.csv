@@ -1,0 +1,13 @@
+metric,value,notes
+scope,intervention_eligible,analysis scope for denominator and event linkage
+raw_events_total,91,fall_events_source rows scoped to study hospital
+eligible_events_analysis_base,40,events linked to eligible scope + analysis base hour keys
+eligible_events_chair_or_bed_hard_label,28,"eligible events with hard labels in {chair, bed}"
+modeled_effective_events_primary,40.0,primary_adjusted n_events from adjusted RR output
+modeled_minus_chair_bed_hard_label,12.0,proportional allocation includes room/no_patient probability mass
+consensus_source_unique_monitors_full_file,37,unique monitor_ids parsed from the entire adjudicated consensus CSV
+consensus_included_fall_unique_monitors_full_file,30,unique monitor_ids among full-file included_fall annotations
+consensus_source_rows_study_window,34,consensus source rows with event_key local dates inside configured study window 2024-08-01 to 2025-12-31
+consensus_source_unique_monitors_study_window,34,unique monitor_ids from consensus source rows inside configured study window 2024-08-01 to 2025-12-31
+consensus_included_fall_rows_study_window,27,included_fall consensus rows inside configured study window 2024-08-01 to 2025-12-31
+consensus_included_fall_unique_monitors_study_window,27,unique monitor_ids among included_fall consensus rows inside configured study window 2024-08-01 to 2025-12-31

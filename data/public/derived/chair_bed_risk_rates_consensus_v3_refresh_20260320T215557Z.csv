@@ -1,0 +1,17 @@
+scope,daypart,position,eligible_event_count,exposure_hours,expected_falls,hard_label_falls,rate_per_1000_exposure_hours_expected,rate_per_1000_exposure_hours_hard_label
+intervention_eligible,all_dayparts,chair,40,320.51,5.6911,5,17.7564,15.6001
+intervention_eligible,all_dayparts,bed,40,5121.42,22.0462,23,4.3047,4.4909
+intervention_eligible,window_00_05,chair,7,46.42,0.8214,1,17.6947,21.5424
+intervention_eligible,window_00_05,bed,7,1353.77,3.648,3,2.6947,2.216
+intervention_eligible,window_06_08,chair,3,2.32,0.0267,0,11.5155,0.0
+intervention_eligible,window_06_08,bed,3,699.12,1.9819,2,2.8349,2.8607
+intervention_eligible,window_09_11,chair,3,3.49,0.0,0,0.0,0.0
+intervention_eligible,window_09_11,bed,3,688.33,2.0108,2,2.9213,2.9056
+intervention_eligible,window_12_14,chair,6,42.19,1.837,1,43.541,23.7023
+intervention_eligible,window_12_14,bed,6,636.58,2.2694,3,3.5651,4.7127
+intervention_eligible,window_15_17,chair,5,73.55,1.0738,1,14.5999,13.5962
+intervention_eligible,window_15_17,bed,5,558.96,3.5116,4,6.2823,7.1561
+intervention_eligible,window_18_20,chair,9,95.88,0.5777,0,6.0253,0.0
+intervention_eligible,window_18_20,bed,9,578.22,5.1191,6,8.8532,10.3767
+intervention_eligible,window_21_23,chair,7,56.66,1.3545,2,23.9055,35.2983
+intervention_eligible,window_21_23,bed,7,606.44,3.5054,3,5.7802,4.9469

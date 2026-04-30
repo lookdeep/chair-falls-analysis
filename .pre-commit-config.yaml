@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff
+        entry: uv run --project . ruff check src scripts tests
+        language: system
+        pass_filenames: false
+      - id: pytest-smoke
+        name: pytest-smoke
+        entry: uv run --project . pytest -m smoke
+        language: system
+        pass_filenames: false
