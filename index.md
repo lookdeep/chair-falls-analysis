@@ -8,7 +8,7 @@ toc_sticky: true
 header:
     overlay_image: assets/images/overview.png
     overlay_filter: 0.85
-    caption: "Probability-weighted descriptive chair vs bed fall rates per 1,000 exposure-hours (Figure 1 of manuscript)."
+    caption: "Probability-weighted descriptive chair vs bed fall rates per 1,000 exposure-hours (Figure 2 of manuscript)."
     actions:
         - label: "Read Preprint <i class='fa fa-external-link'></i>"
           url: "https://arxiv.org/abs/2603.22785"
@@ -29,8 +29,8 @@ Hospital fall surveillance is conventionally reported per occupied bed-day — a
 
 The result is a sensor-informatics methodology for translating probabilistic per-hour state estimates from continuous-monitoring deployments into rate inferences with explicit uncertainty propagation, applicable beyond fall surveillance to any deployment where state-label calibration is imperfect.
 
-![Figure 1 of manuscript](assets/images/overview.png "Probability-weighted descriptive fall rates by patient position")
-_Figure 1 of manuscript — descriptive chair vs bed fall rates per 1,000 exposure-hours among intervention-eligible monitor-units._
+![Figure 2 of manuscript](assets/images/overview.png "Probability-weighted descriptive fall rates by patient position")
+_Figure 2 of manuscript — descriptive chair vs bed fall rates per 1,000 exposure-hours among intervention-eligible monitor-units._
 
 # Key Result
 
@@ -49,7 +49,14 @@ The headline numbers from a retrospective deployment spanning 11 hospitals (Augu
 The HC3 confidence interval crosses 1.0; with 40 events the result is **hypothesis-generating, not confirmatory**. The misclassification-sensitivity panel quantifies how classifier label quality (macro F1 = 0.528; expected calibration error = 0.450) bounds the inferential strength.
 
 ![Sensitivity panel forest plot](assets/images/sensitivity_forest.png "Sensitivity analyses")
-_Forest plot of sensitivity analyses; full panel in the supplementary material._
+_Forest plot of adjusted rate ratios across primary and sensitivity analyses (Figure 3 of manuscript); the full panel is in the supplementary material._
+
+## Operational Signals
+
+A secondary descriptive analysis on the talk-confirmed subset (348.8 chair-hours / 5,351.7 bed-hours) shows normalized monitoring burden — talk clicks, manual alarm triggers, active nudge seconds — running higher during chair exposure than bed exposure on every channel. These are workflow proxies, not modeled outcomes, but they reinforce the chair-hazard direction surfaced by the rate model.
+
+![Operational signals by position](assets/images/operational_signals.png "Secondary operational monitoring signals by patient position")
+_Talk clicks, manual alarm triggers, and active nudge-state seconds per exposure-hour by patient position in talk-confirmed intervention sessions (Figure 4 of manuscript)._
 
 # Methods at a Glance
 
@@ -58,6 +65,12 @@ _Forest plot of sensitivity analyses; full panel in the supplementary material._
 - **Exposure:** probability-weighted chair- and bed-exposure-hours summed across all hourly rows of the 42 intervention-eligible units (320.5 / 5,121.4).
 - **Inference:** Poisson GLM with log-exposure offset; covariates for time-of-day window, day of week, calendar quarter, and division identifier; HC3 robust SE primary; division-clustered SE exploratory only (n = 9 divisions, below the 30-cluster threshold).
 - **Uncertainty propagation:** pre-specified misclassification scenarios (symmetric 10/20/30% chair/bed swaps + one-sided 20% swaps) translate classifier label-quality bounds into rate-ratio bounds.
+
+![STROBE cohort flow](assets/images/strobe_flow.png "STROBE cohort flow diagram")
+_STROBE cohort flow for the denominator cohort and inferential event base (Figure 1 of manuscript). Auxiliary descriptive cohorts — mechanism-coding source, departure-aware benchmark subset, broader monitoring feed — are detailed in the supplement._
+
+![Monitoring-to-exposure pipeline schematic](assets/images/context_schematic.png "Monitoring-to-exposure pipeline schematic")
+_Conceptual schematic of the monitoring-to-exposure pipeline: per-hour CV position fractions become position-specific exposure-hours, which serve as the denominator in the adjusted Poisson rate model (Figure 5 of manuscript)._
 
 ![Daypart distribution](assets/images/daypart.png "Daypart distribution of expected falls and chair probability")
 _Daypart distribution of expected falls and mean chair probability across seven local time windows (Figure 6 of manuscript)._
@@ -75,6 +88,13 @@ just paper-build
 ```
 
 See [`docs/reproduce_this_paper.md`](https://github.com/lookdeep/chair-falls-analysis/blob/main/docs/reproduce_this_paper.md) for the full walkthrough.
+
+# Supplementary Highlights
+
+The supplement consolidates four ancillary analyses that bound interpretation of the primary rate estimate without entering the Poisson model: (i) automated label quality on the departure-aware benchmark subset (macro F1, ECE, latency MAE), (ii) a multimodal-LLM benchmark on a 3-way overlap subset, (iii) a mechanism-coded observation cohort (n = 32 deduplicated events), and (iv) a furniture-exit detection concordance disclosure (non-estimable on this extraction). The mechanism-coded cohort exposes the recurring chair → transfer → fall pattern that motivates the chair-time denominator.
+
+![Mechanism taxonomy of fall events](assets/images/mechanism_taxonomy.png "Mechanism taxonomy of observed fall events by patient posture")
+_Mechanism taxonomy of fall events stratified by patient posture from the dual-reviewer observation cohort (supplementary material)._
 
 # Resources
 
@@ -112,4 +132,5 @@ All video data was de-identified upstream via facial blurring and removal of dir
 # Change Log
 
 - **2026-04-30** — initial project page; manuscript submitted to IEEE J-BHI Sensor Informatics.
+- **2026-05-19** — integrated J-BHI submission packet: refreshed masthead navigation, added STROBE flow / pipeline schematic / operational-signals / mechanism-taxonomy figures from the manuscript, verified headline numbers against the canonical submission source.
 - **(pending)** — IEEE J-BHI publication URL, Zenodo DOI archive.
