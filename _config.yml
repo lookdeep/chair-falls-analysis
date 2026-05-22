@@ -25,7 +25,8 @@ description              : "Probability-weighted position-specific exposure deno
 url                      : "https://lookdeep.github.io/chair-falls-analysis" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "lookdeep/chair-falls-analysis" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/og-card.png" # fallback teaser image used for OG / social card preview
+og_image                 : "/assets/images/og-card.png" # site-wide default Open Graph image (1200x630)
 logo                     : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)

@@ -1,12 +1,15 @@
-# main links
+# main links — top masthead navigation
+# Mirrors the action buttons in index.md so the calls-to-action stay
+# reachable as the visitor scrolls.
+
 main:
-  - title: "Explore <i class='fa fa-external-link'></i>"
-    url: "https://lookdeep.vercel.app/"
-  - title: "Paper <i class='fa fa-external-link'></i>"
-    url: "https://www.frontiersin.org/journals/imaging/articles/10.3389/fimag.2025.1547166"
-  - title: "Code <i class='fa fa-external-link'></i>"
-    url: "https://colab.research.google.com/drive/1v0Egoyt5pBmTmb9iEV8RZFSzhym5XpU4?usp=sharing"
-  - title: "Download (3.88 MB) <i class='fa fa-external-link'></i>"
-    url: "https://raw.githubusercontent.com/lookdeep/ai-norms-2024/refs/heads/main/data/data_by_patient_hour_scrubbed.csv"
-  - title: "Github <i class='fa fa-external-link'></i>"
-    url: "https://github.com/lookdeep/ai-norms-2024"
+  - title: "Preprint <i class='fa fa-external-link'></i>"
+    url: "https://arxiv.org/abs/2603.22785"
+  - title: "Manuscript <i class='fa fa-external-link'></i>"
+    url: "https://github.com/lookdeep/chair-falls-analysis/raw/main/paper/build/manuscript.docx"
+  - title: "Supplement <i class='fa fa-external-link'></i>"
+    url: "https://github.com/lookdeep/chair-falls-analysis/raw/main/paper/build/supplement.docx"
+  - title: "Data Bundle <i class='fa fa-external-link'></i>"
+    url: "https://github.com/lookdeep/chair-falls-analysis/tree/main/data/public"
+  - title: "GitHub <i class='fa fa-external-link'></i>"
+    url: "https://github.com/lookdeep/chair-falls-analysis"
