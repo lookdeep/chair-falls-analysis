@@ -4,8 +4,8 @@
 serve test:
 	bundle exec jekyll serve --watch
 
-# Promote gh-pages-draft to gh-pages and trigger the deploy workflow.
-# Run only when the J-BHI manuscript is accepted and you want the site live.
+# Push gh-pages to origin and trigger the Jekyll deploy workflow.
+# Run only from the gh-pages branch when you want the site live.
 publish:
 	bash scripts/publish-site.sh
 
